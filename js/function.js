@@ -2,17 +2,25 @@ $(document).ready(function () {
 	// wow animation
 	wow = new WOW(
 		{
-			animateClass: 'animated',
+			animateClass: 'animate__animated',
 			offset: 400
 		}
 	);
 	wow.init();
 
 	//Smooth scrolling with links
-	$('a[href*=\\#]').click(function (event) {
+	$('.header ul a').click(function(){
 		$('html, body').animate({
-			scrollTop: $($.attr(this, 'href')).offset().top
-		}, 500);
-		event.preventDefault();
+        	scrollTop: $($.attr(this, 'href')).offset().top-114
+    	}, 500);
 	});
+	
+
+	// $('a[href*=\\#]').click(function (event) {
+	// 	$('html, body').animate({
+	// 		scrollTop: $($.attr(this, 'href')).offset().top
+	// 	}, 500);
+	// 	event.preventDefault();
+	// });
 });
+
