@@ -2,8 +2,7 @@ $(document).ready(function () {
 	// wow animation
 	wow = new WOW(
 		{
-			animateClass: 'animate__animated',
-			offset: 400
+			animateClass: 'animate__animated'
 		}
 	);
 	wow.init();
